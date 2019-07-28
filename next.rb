@@ -1,8 +1,7 @@
-require 'sinatra'
-require 'rest-client'
-require 'pry'
-require 'json'
 require 'date'
+require 'json'
+require 'rest-client'
+require 'sinatra'
 
 get '/' do
   response = RestClient.get('https://todoist.com/api/v8/sync', {
